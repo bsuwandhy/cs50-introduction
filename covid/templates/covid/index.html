@@ -1,0 +1,32 @@
+{% extends "covid/layout.html" %}
+{% load static %}
+
+{% block body %}
+<div id="globalMap" class="center"></div>
+
+<div id="divCountrySelect" class="center" style="padding: 1rem 0;">
+    <select id="countrySelect" name="country" onchange="changeCountry()"></select>
+</div>
+
+<div class="center">
+    <div class="text-center" style="flex-direction: column;">
+        <div>Cases</div>
+        <div id="globalCases"></div>
+        <div id="globalCasesToday" style="font-size: 60%; color:red;"></div>
+    </div>
+    <div class="text-center" style="flex-direction: column; margin: 0 1rem;">
+        <div class="text-center">Deaths</div>
+        <div id="globalDeaths"></div>
+        <div id="globalDeathsToday" style="font-size: 60%; color:red;"></div>
+    </div>
+    <div class="text-center" style="flex-direction: column; margin-right: 1rem;">
+        <div class="text-center">Recovered</div>
+        <div id="globalRecovered"></div>
+        <div id="globalRecoveredToday" style="font-size: 60%; color:green;"></div>
+    </div>    
+</div>
+
+<div id="countryConfirmed" class="center"></div>
+<div id="countryDeaths" class="center"></div>
+<div id="table_div" class="center" style="padding-bottom: 1rem;"></div>
+{% endblock %}

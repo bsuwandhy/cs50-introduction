@@ -1,0 +1,82 @@
+* {
+    background-color: #242627;
+    color: white;
+}
+
+.oddTableRow {
+    background-color:rgb(232, 246, 247);
+}
+
+.tableRow {
+    background-color:rgb(246, 253, 253);
+} 
+
+tr:hover {
+    background-color: rgba(233, 235, 154, 0.76) !important;
+}
+
+.selectedTableRow {
+    background-color: rgba(141, 186, 238, 0.76) !important;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper {
+    position: relative;
+}
+
+.overlap {
+    width: 250px;
+    position: absolute;
+    top: 25%;
+    left: 10%;
+    background-color: transparent;
+}
+
+.transparent {
+    background-color: transparent !important;
+}
+
+.accordion .card-header:after {
+    font-family: 'FontAwesome';  
+    content: "\f068";
+    float: right; 
+}
+.accordion .card-header.collapsed:after {
+    /* symbol for "collapsed" panels */
+    content: "\f067"; 
+}
+
+.card-header {
+    background-color: #001e4f !important;
+}
+
+.card-body {
+    background-color: lightgrey;
+}
+
+.card-body p {
+    background-color: lightgrey;
+    color: black;
+}
+
+.card-body ul {
+    background-color: lightgrey;
+    color: black;
+}
+
+.card-body ul li {
+    background-color: lightgrey;
+    color: black;
+}
+
+.card {
+    border: 0px;
+}
+
+a {
+    color: white;
+}
